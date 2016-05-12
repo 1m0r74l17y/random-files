@@ -5,9 +5,10 @@ def isprime(n):
     return True
 
 sum=0;
-for i in xrange(1,int(2e6),2):
+num = input("what number? : ")
+for i in xrange(1,num,2):
     if isprime(i):
         sum += i
 
 
-print sum
+print sum + 1
