@@ -1,0 +1,3 @@
+bla = input("bla")
+
+print 2*(bla*bla)+(4*bla)-3

@@ -35,3 +35,9 @@ if d > 0:
     f.write("\n")
     f.write("x{} : {}".format("2", x2))
     f.write("d = ({}*{})-(4*{}*{})\n\n".format(b,b,a,c))
+
+toppunktx = ((-b)/(2*a))
+toppunkty = ((-d)/(4*a))
+
+print "T({},{})".format(toppunktx,toppunkty)
+f.write("T({},{})".format(toppunktx,toppunkty))
