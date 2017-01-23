@@ -17,13 +17,13 @@ if d == 0.0 or 0:
     x = -b/(2*a)
     print "x : " + str(x)
     f.write("x : {}".format(x))
-    f.write("d = ({}*{})-(4*{}*{})\n\n".format(b,b,a,c))
+    f.write("\nd = ({}*{})-(4*{}*{})\n\n".format(b,b,a,c))
 
 if d < 0:
     print "there is no x."
     f.write("there is no x.\n")
 
-    f.write("d = ({}*{})-(4*{}*{})\n\n".format(b,b,a,c))
+    f.write("\nd = ({}*{})-(4*{}*{})\n\n".format(b,b,a,c))
 
 if d > 0:
     sqrtd = math.sqrt(d)
@@ -34,10 +34,24 @@ if d > 0:
     f.write("x{} : {}".format("1", x1))
     f.write("\n")
     f.write("x{} : {}".format("2", x2))
-    f.write("d = ({}*{})-(4*{}*{})\n\n".format(b,b,a,c))
+    f.write("\nd = ({}*{})-(4*{}*{})\n\n".format(b,b,a,c))
 
 toppunktx = ((-b)/(2*a))
 toppunkty = ((-d)/(4*a))
 
 print "T({},{})".format(toppunktx,toppunkty)
 f.write("T({},{})".format(toppunktx,toppunkty))
+
+##########################################################
+#ULIGHEDER
+##########################################################
+# 
+# unqeual = raw_input("Is equation an unequality? y/n : ")
+#
+# if unqeual == "y":
+#     sign = raw_input("what sign is used? </> : ")
+#     if sign == "<":
+#         if d > 0 and a>0:
+#             f.write()
+#
+#     else:
